@@ -14,17 +14,14 @@
   <builders>
     <hudson.tasks.Shell>
       <command>WORKDIR=`pwd`
-echo &apos;Hello Docker.&apos;
+        echo &apos;Hello Docker.&apos;
 
-# Run Docker Container.
-docker run koduki/centos7  /bin/bash -c &quot;$(cat &lt;&lt;EOL
+        # Run Docker Container.
+        docker run koduki/centos7 &apos;\
 
-cat /etc/redhat-release
-ls -l
-
-EOL
-)&quot;
-      </command>
+        cat /etc/redhat-release ;\
+        ls -l \
+        &apos;</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers>
