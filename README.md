@@ -20,3 +20,8 @@ docker images
 ```
 docker run --privileged -p "8000:8000" -it koduki/jenkins-with-docker
 ```
+
+Repository
+----------------------
+
+https://github.com/koduki/docker-jenkins-with-docker
